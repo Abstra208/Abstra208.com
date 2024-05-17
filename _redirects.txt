@@ -1,0 +1,2 @@
+# Redirect all HTML documents to their corresponding URLs
+/*.html    /:splat    200

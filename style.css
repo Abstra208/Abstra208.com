@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    grid-template-columns: 35% auto;
+    background-color: #0d1117;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, li {
+    color: #f0f6fc;
+}
+
+#user_icon {
+    position: relative;
+}
+
+#user_icon h2 {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    margin: 2%;
+    padding: 0;
+    color: #f0f6fc;
+    font-size: 4rem;
+}
+
+#user_icon img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+#info {
+    margin-right: 10px;
+    padding: 20px;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(0, 0, 0, 0.219);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 15px 15px 0px;
+}
