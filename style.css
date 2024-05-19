@@ -1,12 +1,64 @@
-body {
-    display: grid;
-    grid-template-columns: 35% auto;
+/*Basic styling for all the pages */
+body{
     background-color: #0d1117;
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
 }
 h1, h2, h3, h4, h5, h6, p, li {
     color: #f0f6fc;
+}
+
+/*Footer styling */
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*Body id base styling */
+#portfolio {
+    display: grid;
+    grid-template-columns: 35% auto 8%;
+}
+#index{
+    display: grid;
+    grid-template-columns: auto 8%;
+}
+
+/*Styling for the navigation bar */
+nav{
+    position: relative;
+    display: none;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(1rem);
+    background-color: rgba(0, 0, 0, 0.219);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    position: fixed;
+    border-radius: 15px;
+    width: 40%;
+    z-index: 1;
+}
+nav li{
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #0d1117;
+    height: 50px;
+    width: 50px;
+}
+
+#active:checked + #navigation{
+    display: flex;
 }
 
 #user_icon {
@@ -32,10 +84,13 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 #info {
-    margin-right: 10px;
     padding: 20px;
     backdrop-filter: blur(1rem);
     background-color: rgba(0, 0, 0, 0.219);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0px 15px 15px 0px;
+}
+
+#presentation{
+    padding: 20px;
 }
