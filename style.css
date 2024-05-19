@@ -4,6 +4,8 @@ body {
     background-color: #0d1117;
     margin: 0;
     padding: 0;
+    height 100%;
+    width: 100%;
 }
 h1, h2, h3, h4, h5, h6, p, li {
     color: #f0f6fc;
@@ -11,6 +13,8 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 #user_icon {
     position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 #user_icon h2 {
@@ -20,7 +24,9 @@ h1, h2, h3, h4, h5, h6, p, li {
     margin: 2%;
     padding: 0;
     color: #f0f6fc;
-    font-size: 4rem;
+    font-size: 100%;
+    width: 70%;
+    height: auto;
 }
 
 #user_icon img {
