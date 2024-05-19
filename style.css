@@ -63,7 +63,7 @@ nav li{
 
 #user_icon {
     position: relative;
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
@@ -74,9 +74,7 @@ nav li{
     margin: 2%;
     padding: 0;
     color: #f0f6fc;
-    font-size: 100%;
-    width: 70%;
-    height: auto;
+    font-size: 450%;
 }
 
 #user_icon img {
