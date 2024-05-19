@@ -66,6 +66,7 @@ label[for="active"].menu{
     position: fixed;
     top: 2.5%;
     right: 7%;
+    cursor: pointer;
 }
 #active:checked + #navigation,
 #active:checked ~ label[for="active"].background {
