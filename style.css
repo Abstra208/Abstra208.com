@@ -19,6 +19,8 @@ footer{
     display: flex;
     justify-content: center;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 /*Body id base styling */
@@ -83,12 +85,12 @@ label[for="active"].background{
     z-index: 0;
 }
 
+/*portfolio page styling */
 #user_icon {
     position: relative;
     height: auto;
     width: 100%;
 }
-
 #user_icon h2 {
     position: absolute;
     bottom: 0;
@@ -98,7 +100,6 @@ label[for="active"].background{
     color: #f0f6fc;
     font-size: 4.5vw;
 }
-
 #user_icon img {
     position: relative;
     z-index: -1;
