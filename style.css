@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /*border: green 1px solid;*/
+}
+
 /*Basic styling for all the pages */
 body{
     background-color: #0d1117;
-    margin: 0;
-    padding: 0;
     height: 100%;
     width: 100%;
+    font-family: "Roboto", sans-serif;
 }
 h1, h2, h3, h4, h5, h6, p, li {
     color: #f0f6fc;
@@ -18,71 +25,64 @@ h1, h2, h3, h4, h5, h6, p, li {
 footer{
     display: flex;
     justify-content: center;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    align-items: center;
 }
 
 /*Body id base styling */
 #portfolio {
+    height: 100vh;
     display: grid;
-    grid-template-columns: 35% auto;
+    grid-template-rows: 15% auto;
+}
+#index{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% auto;
 }
 
 /*Styling for the navigation bar */
 #navigation{
-    position: relative;
-    display: none;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    backdrop-filter: blur(1rem);
-    background-color: rgba(61, 48, 48, 0.219);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    position: fixed;
-    border-radius: 15px;
-    width: 40%;
-    z-index: 1;
-}
-#navigation li{
-    padding: 1vw;
-}
-#navigation li a{
-    color: white;
-    font-size: 5vw;
-    text-decoration: none;
-}
-#active{
-    display: none;
-}
-label[for="active"].menu{
-    background-color: blue;
-    padding: 10px;
-    border-radius: 10px;
-    border: wheat 2px solid;
-    position: fixed;
-    top: 2.5%;
-    right: 7%;
-    cursor: pointer;
-}
-#active:checked + #navigation,
-#active:checked ~ label[for="active"].background {
-    display: flex;
-}
-label[for="active"].background{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#navigation h1{
+    margin-left: 5%;
+    font-size: 2.5vw;
+}
+#navigation nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 35vw;
+    list-style: none;
+    margin-right: 5%;
+}
+#navigation nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+}
+#navigation nav li{
+    width: cover;
+    height: cover;
+}
+#navigation nav img{
+    width: 30px;
+    height: auto;
+}
+
+/*Styling for the main content */
+main{
+    display: grid;
+    grid-template-rows: auto 5%;
+}
+#info-port{
+    display: grid;
+    grid-template-columns: 35% auto;
 }
 
 /*portfolio page styling */

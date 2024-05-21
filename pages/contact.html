@@ -7,29 +7,37 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1>Contact Us</h1>
-    
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <div id="navigation">
+        <h1>Ludovic Morin</h1>
+        <nav>
+            <li><a class="non-selectable" href="../index.html">Accueil</a></li>
+            <li><a class="non-selectable" href="/pages/portfolio.html">À propos</a></li>
+            <li><a class="non-selectable" href="/pages/projects.html">Projets</a></li>
+            <li><a class="non-selectable" href="/pages/contact.html">Contact</a></li>
+            <li><a class="non-selectable" href="/pages/discord.html"><img src="../img/discord.svg" alt="discord logo"></a></li>
+            <li><a class="non-selectable" href="https://github.com/abstra208"><img src="../img/github.svg" alt="github logo"></a></li>
+        </nav>
+    </div>
+    <main>
+        <h1>Contact</h1>
         
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <h2>Envoyez-moi un message</h2>
+        <form action="https://formspree.io/f/xzbnqzjr" method="POST">
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+        </form>
         
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <button type="submit">Submit</button>
-    </form>
-    <input type="checkbox" id="active">
-    <nav id="navigation">
-        <li><a class="non-selectable" href="../index.html">Accueil</a></li>
-        <li><a class="non-selectable" href="/pages/portfolio.html">À propos</a></li>
-        <li><a class="non-selectable" href="/pages/projects.html">Projets</a></li>
-        <li><a class="non-selectable" href="/pages/discord.html">Discord</a></li>
-        <li><a class="non-selectable" href="/pages/contact.html">Contact</a></li>
-    </nav>
-    <label for="active" class="background"></label>
-    <label for="active" class="menu">Menu</label>
+        <h2>Autres moyens de contact</h2>
+        <ul>
+            <li>Email: <a href="mailto:ludovicmorin357@proton.me">ludovicmorin357@proton.me</a></li>
+    </main>
 </body>
 </html>
