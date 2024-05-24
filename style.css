@@ -9,9 +9,11 @@
 /*Basic styling for all the pages */
 body{
     background-color: #0d1117;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-rows: 15% auto;
 }
 h1, h2, h3, h4, h5, h6, p, li {
     color: #f0f6fc;
@@ -29,16 +31,6 @@ footer{
 }
 
 /*Body id base styling */
-#portfolio {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 15% auto;
-}
-#index{
-    display: grid;
-    height: 100vh;
-    grid-template-rows: 15% auto;
-}
 
 /*Styling for the navigation bar */
 #navigation{
