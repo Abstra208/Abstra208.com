@@ -9,25 +9,16 @@
 /*Basic styling for all the pages */
 body{
     background-color: #0d1117;
-    height: 100vh;
+    height: 200vh;
     width: 100%;
     font-family: "Roboto", sans-serif;
     display: grid;
     grid-template-rows: 15% auto;
-}
-h1, h2, h3, h4, h5, h6, p, li {
     color: #f0f6fc;
 }
 .non-selectable {
     user-select: none;
     -webkit-user-drag: none;
-}
-
-/*Footer styling */
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /*Body id base styling */
@@ -39,6 +30,8 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 5%;
 }
 #navigation h1{
     margin-left: 5%;
@@ -67,47 +60,31 @@ footer{
     height: auto;
 }
 
-/*Styling for the main content */
 main{
-    display: grid;
-    grid-template-rows: auto 5%;
-}
-#info-port{
-    display: grid;
-    grid-template-columns: 35% auto;
-}
-
-/*portfolio page styling */
-#user_icon {
-    position: relative;
-    height: auto;
+    height: 100%;
     width: 100%;
 }
-#user_icon h2 {
-    position: absolute;
-    bottom: 0;
-    left: 2%;
-    margin: 2%;
-    padding: 0;
-    color: #f0f6fc;
-    font-size: 4.5vw;
-}
-#user_icon img {
-    position: relative;
-    z-index: -1;
+
+/* Styling for the main div */
+#intro_text{
+    height: 100vh;
     width: 100%;
-    height: auto;
-    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-#info {
-    padding: 20px;
-    backdrop-filter: blur(1rem);
-    background-color: rgba(0, 0, 0, 0.219);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 15px 15px 0px;
+/* Styling for the #Main_text */
+#intro_text .left{
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
-#presentation{
-    padding: 20px;
+/* Styling for the spans */
+#intro_text .right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-top: 10%;
 }
