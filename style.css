@@ -75,16 +75,23 @@ main{
 
 /* Styling for the #Main_text */
 #intro_text .left{
+    position: absolute;
+    right: 50%;
+    top: 45%;
     display: flex;
     align-items: center;
     justify-content: end;
+    font-size: 2rem;
 }
 
 /* Styling for the spans */
 #intro_text .right{
+    position: absolute;
+    left: 55%;
+    top: 47.3%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding-top: 10%;
+    font-size: 3rem;
 }
