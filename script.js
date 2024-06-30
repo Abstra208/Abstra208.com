@@ -5,7 +5,7 @@ window.addEventListener('scroll', function() {
 
     const maxSize = 45; // Starting size for padding
     const minSize = 15; // Minimum size for padding
-    const triggerScroll = 100; // Scroll distance to reach min padding
+    const triggerScroll = 500; // Scroll distance to reach min padding
     const scrollRange = triggerScroll; // Define scrollRange for background color transition
     const ColorY = Math.min(window.scrollY, triggerScroll); // Limit scrollY to the maximum of the scroll range
     const opacity = ColorY / scrollRange;
