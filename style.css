@@ -12,8 +12,6 @@ body{
     height: 200vh;
     width: 100%;
     font-family: "Roboto", sans-serif;
-    display: grid;
-    grid-template-rows: 15% auto;
     color: #f0f6fc;
 }
 .non-selectable {
@@ -24,38 +22,35 @@ body{
 /*Body id base styling */
 
 /*Styling for the navigation bar */
-#navigation{
+nav{
     width: 100%;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 5%;
+    transition: padding 0.3s ease-out;
 }
-#navigation h1{
-    margin-left: 5%;
+nav .left{
+    padding: 45px;
+}
+nav .left h1{
     font-size: 2.5vw;
 }
-#navigation nav{
+nav .right{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    width: 35vw;
+    align-items: center;
     list-style: none;
-    margin-right: 5%;
+    padding: 45px;
 }
-#navigation nav a{
+nav .right a{
     text-decoration: none;
-    color: white;
+    color: #f0f6fc;
+    margin: 0 1vw;
     font-size: 1.5vw;
 }
-#navigation nav li{
-    width: cover;
-    height: cover;
-}
-#navigation nav img{
+nav .right img{
     width: 30px;
     height: auto;
 }
